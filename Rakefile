@@ -4,7 +4,7 @@ require 'find'
 
 spec = Gem::Specification.new do |s|
  s.name = "leveldb-ruby"
- s.version = "0.15"
+ s.version = "0.15.1"
  s.date = Time.now
  s.email = "wmorgan-leveldb-ruby-gemspec@masanjin.net"
  s.authors = ["William Morgan"]
@@ -17,6 +17,7 @@ spec = Gem::Specification.new do |s|
  s.extra_rdoc_files = %w(README ext/leveldb/leveldb.cc)
  s.rdoc_options = %w(-c utf8 --main README --title LevelDB)
  s.description = "LevelDB-Ruby is a Ruby binding to LevelDB."
+ s.add_dependency('snappy', '~> 0.0.8')
 end
 
 task :rdoc do |t|

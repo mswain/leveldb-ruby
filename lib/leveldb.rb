@@ -1,4 +1,5 @@
 require 'leveldb/leveldb' # the c extension
+require 'snappy'
 
 module LevelDB
 class DB
